@@ -47,13 +47,19 @@ h1
 {
     font-size: 64px;
 }
+h2
+{
+    font-weight: 900;
+}
 p
 {
     font-size: 16px;
+    line-height: 26px;
 }
 .container
 {
     width: 100%;
+    height: auto;
 }
 .logo
 {
@@ -176,7 +182,7 @@ span
 .numbers
 {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 72px;
 }
 .rectangle
 {
@@ -236,19 +242,20 @@ span
 .text3
 {
     margin: 0 auto;
-    width: 52%;
+    width: 38%;
     color: var(--gray);
     font-size: 18px;
     line-height: 26px;
-    margin-bottom: 184px;
+    /* margin-bottom: 184px; */
     margin-top: 32px;
 
 }
 .footer
 {
     max-width: 100%;
-    height: 308px;
-    background-image: url(../desktop/img-footer.jpg);
+    min-height: 308px;
+    /* background-image: url(../desktop/img-footer.jpg); */
+    background: linear-gradient(rgba(77,150,169, 0.8), rgba(77,150,169, 0.8)), url(../desktop/image-footer.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,7 +272,7 @@ span
 }
 .content-footer
 {
-    height: inherit;
+    min-height: 308px;
 }
 .content-footer p
 {
@@ -291,4 +298,311 @@ span
 .content-footer .version
 {
     color: #D9B8FF;
+}
+.num2
+{
+    position: relative;
+    z-index: 99;
+    top: 25px;
+    background-color: var(--white);
+}
+.numbers2 .rectangle
+{
+    transform: translate(28px, 41px);
+}
+
+@media screen and (max-width: 1440px)
+{
+    .content h1
+    {
+        font-size: 58px;
+    }
+    .text
+    {
+        margin: 50px 0 100px 0;
+        width: 100%;
+    }
+    .text3
+    {
+        width: 32%;
+    }
+    .images img
+    {
+        width: 90px;
+        height: 90px;
+    }
+    .row-right
+    {
+        margin-left: 3rem;
+    }
+    .row-left,.row-left:nth-child(1)
+    {
+        margin-right: 2rem;
+    }
+    .container-img img
+    {
+        width: 50%;
+        height: 50%;
+    }
+    #download
+    {
+        padding: 5px 30px;
+    }
+}
+@media screen and (max-width: 992px)
+{
+    .content h1 
+    {
+        font-size: 40px;
+    }
+    .content
+    {
+        font-size: 16px;
+    }
+    button
+    {
+        font-size: 15px;
+    }
+    #download
+    {
+        padding: 5px 20px;
+    }
+    .row-right
+    {
+        margin-left: 2rem;
+    }
+    .row-left,.row-left:nth-child(1)
+    {
+        margin-right: 0.5rem;
+    }
+    .row-left:nth-child(1)
+    {
+        margin-left: -12px;
+    }
+    .h2 h2
+    {
+        font-size: 33px;
+    }
+    .content-footer
+    {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .content-footer p
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+/* 768px */
+@media screen and (max-width: 856px)
+{
+    section.top
+    {
+        /* height: 650px; */
+        flex-wrap: wrap;
+    }
+    .images
+    {
+        width: 50%;
+        order: 2;
+        visibility: hidden;
+
+    }
+    .img1-container
+    {
+        background-image: url(../tablet/image-hero.png);
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-size: 105%;
+        background-position-x: -10px;
+    }
+    /* .images img:nth-child(2) 
+    {
+        margin-top: 28px;
+    }
+    .row-left,.row-right,.row-left:nth-child(1)
+    {
+        margin: 0;
+    }
+    .row-left:nth-child(2)
+    {
+        margin-top: 240px;
+        margin-right: 32px;
+        margin-left: 32px;
+    }
+    .row-left:nth-child(3)
+    {
+        margin-left: -15px;
+    }
+    .row-right:nth-child(1)
+    {
+        margin-right: -15px;
+    }
+    .row-right:nth-child(2)
+    {
+        margin-bottom: 240px;
+        margin-right: 32px;
+        margin-left: 32px;
+    } */
+    .content
+    {
+        order: 3;
+        width: 457px;
+    }
+    .content h1
+    {
+        font-size: 48px;
+        width: 100%;
+    }
+    .content p
+    {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    .content-footer
+    {
+        min-height: auto;
+    }
+    /* .container-img
+    {
+        margin: 0 40px;
+    } */
+    .container-img img
+    {
+        /* width: 164px;
+        height: 156px; */
+        padding: 11px;
+        border-radius: 15px;
+    }
+    #what-is-it
+    {
+        margin-left: 16px;
+    }
+    .content-footer
+    {
+        flex-direction: column;
+    }
+    .footer
+    {
+        height: auto;
+    }
+    h2
+    {
+        font-size: 40px;
+    }
+    .footer h2
+    {
+        margin-top: 92px;
+        text-align: center;
+    }
+    .content-footer p 
+    {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 40px;
+        width: 75%;
+    }
+    .btn-container
+    {
+        margin-bottom: 66px;
+    }
+    .text
+    {
+        margin: 0;
+        width: 100%;
+    }
+    .text1
+    {
+        margin-top: 48px;
+    }
+    .text2
+    {
+        width: 58%;
+    }
+    .text3
+    {
+        width: 77%;
+    }
+    .first
+    {
+        margin-top: 335px;
+    }
+}
+@media only screen and (max-width: 768px) and (orientation: landscape) 
+{
+    .text3
+    {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 375px)
+{
+    .img1-container
+    {
+        background-size: 109%;
+        background-position-x: -19px;
+    }
+    .content h1
+    {
+        font-size: 40px;
+    }
+    section.top
+    {
+        height: 180px;
+    }
+    .buttons
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #download
+    {
+        width: 193px;
+        height: 56px;
+        padding: 13px 20px;
+        margin-top: 32px;
+    }
+    #what-is-it
+    {
+        width: 139px;
+        height: 58px;
+        padding: 11px 20px;
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    .first
+    {
+        margin-top: 399px;
+    }
+    .container-img
+    {
+        flex-wrap: wrap;  
+    }
+    .container-img img
+    {
+        width: 45%;
+        height: 45%;
+        padding: 10px;
+    }
+    .text2
+    {
+        width: 90%;
+    }
+    .h2
+    {
+        width: auto;
+    }
+    h2
+    {
+        font-size: 36px;
+    }
+    .text3
+    {
+        width: 88%;
+    }
 }

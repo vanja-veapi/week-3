@@ -198,8 +198,9 @@ span
 }
 .container-img img
 {
-    width: 255px;
-    height: 242px;
+    /* Added max width and height instead of width/height */
+    max-width: 255px;
+    max-height: 242px;
     padding: 30px;
     border-radius: 35px;
 }
@@ -326,8 +327,8 @@ span
     }
     .container-img img
     {
-        width: 50%;
-        height: 50%;
+        max-width: 25%;
+        max-height: 25%;
     }
     #download
     {
@@ -513,7 +514,7 @@ span
     }
     .first
     {
-        margin-top: 335px;
+        margin-top: 380px;
     }
     #download
     {
@@ -574,8 +575,8 @@ span
     }
     .container-img img
     {
-        width: 45%;
-        height: 45%;
+        max-width: 45%;
+        max-height: 45%;
         padding: 10px;
     }
     .text2

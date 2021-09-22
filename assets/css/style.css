@@ -43,14 +43,8 @@ header
     width: 100%;
     height: 160px;
 }
-h1
-{
-    font-size: 64px;
-}
-h2
-{
-    font-weight: 900;
-}
+h1{font-size: 64px;}
+h2{font-weight: 900;}
 p
 {
     font-size: 16px;
@@ -117,18 +111,9 @@ section.top
     line-height: 26px;
     margin-top: 30px;
 }
-.row-left:nth-child(1)
-{
-    margin: 3rem 3rem 3rem -3rem;
-}
-.row-left
-{
-    margin: 3rem 3rem 3rem 0rem;
-}
-.row-right
-{
-    margin: 3rem -1.7rem 3rem 6rem;
-}
+.row-left:nth-child(1){margin: 3rem 3rem 3rem -3rem;}
+.row-left{margin: 3rem 3rem 3rem 0rem;}
+.row-right{margin: 3rem -1.7rem 3rem 6rem;}
 button
 {
     border: none;

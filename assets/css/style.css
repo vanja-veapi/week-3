@@ -453,12 +453,12 @@ span
     .content h1
     {
         font-size: 48px;
-        width: 100%;
+        width: 76%;
     }
     .content p
     {
         font-size: 16px;
-        max-width: 100%;
+        max-width: 99%;
     }
     .content-footer
     {
@@ -530,12 +530,16 @@ span
     {
         margin-top: 335px;
     }
+    #download
+    {
+        padding: 5px 40px;
+    }
 }
 @media only screen and (max-width: 768px) and (orientation: landscape) 
 {
     .text3
     {
-        width: 50%;
+        width: 72%;
     }
 }
 @media screen and (max-width: 375px)
@@ -604,5 +608,9 @@ span
     .text3
     {
         width: 88%;
+    }
+    .content p
+    {
+        max-width: 100%;
     }
 }

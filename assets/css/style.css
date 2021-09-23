@@ -38,10 +38,13 @@ body
 .justify-content-end {justify-content: flex-end;}
 .justify-content-evenly {justify-content: space-evenly;}
 .overflow-hidden {overflow: hidden;}
+.bg-purple{background-color: var(--dark-purple);}
+.btn {transition: 0.4s ease-in;}
 header
 {
     width: 100%;
-    height: 160px;
+    /* height: 160px; */
+    margin: 80px 0 61px 0;
 }
 h1{font-size: 64px;}
 h2{font-weight: 900;}
@@ -132,14 +135,16 @@ button:hover
 {
     margin-top: 32px;
     width: 100%;
-    height: 58px;
+    /* height: 58px; */
+}
+.btn-padding
+{
+    padding: 16px 40px;
 }
 #download
 {
-    height: 58px;
+    /* height: 58px; */
     background-color: var(--green-blue);
-    padding: 16px 40px;
-    transition: .4s ease-in;
 }
 #download:hover
 {
@@ -155,10 +160,11 @@ span
 }
 #what-is-it
 {
-    background-color: var(--dark-purple);
-    width: 139px;
-    height: 58px;
-    transition: .4s ease-in;
+    /* background-color: var(--dark-purple); */
+    /* width: 139px;
+    height: 58px; */
+    padding: 16px 29px;
+    margin-left: 16px;
 }
 #what-is-it:hover
 {
@@ -167,7 +173,11 @@ span
 .numbers
 {
     width: 100%;
-    margin-top: 72px;
+    margin-top: 111px;
+}
+.numbers2
+{
+    margin-top: -73px;
 }
 .rectangle
 {
@@ -194,15 +204,20 @@ span
 .container-img
 {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 63px;
 }
 .container-img img
 {
     /* Added max width and height instead of width/height */
     max-width: 255px;
     max-height: 242px;
-    padding: 30px;
-    border-radius: 35px;
+    /* padding: 14px; */
+    /* padding-right: 14px; */
+    border-radius: 10px;   
+}
+.container-img img:nth-child(1),.container-img img:nth-child(2), .container-img img:nth-child(3)
+{
+    margin-right: 14px;
 }
 .text
 {
@@ -271,10 +286,10 @@ span
 }
 #download-footer
 {
-    width: 193px;
-    height: 58px;
-    background-color: var(--dark-purple);
-    transition: .4s ease-in;
+    /* width: 193px;
+    height: 58px; */
+    /* background-color: var(--dark-purple); */
+    /* transition: .4s ease-in; */
     font-size: 16px;
 }
 #download-footer:hover
@@ -301,12 +316,17 @@ span
 {
     .content h1
     {
-        font-size: 58px;
+        font-size: 55px;
+        width: 100%;
     }
     .text
     {
         margin: 50px 0 100px 0;
         width: 100%;
+    }
+    .text2
+    {
+        width: 54%;
     }
     .text3
     {
@@ -325,33 +345,33 @@ span
     {
         margin-right: 2rem;
     }
+    .container-img
+    {
+        padding: 0 40px;
+    }
     .container-img img
     {
         max-width: 25%;
         max-height: 25%;
     }
-    #download
-    {
-        padding: 5px 30px;
-    }
 }
-@media screen and (max-width: 992px)
+@media screen and (max-width: 1062px)
 {
     .content h1 
     {
-        font-size: 40px;
+        font-size: 48px;
     }
     .content
     {
         font-size: 16px;
     }
+    .buttons
+    {
+        width: 100%;
+    }
     button
     {
-        font-size: 15px;
-    }
-    #download
-    {
-        padding: 5px 20px;
+        font-size: 14px;
     }
     .row-right
     {
@@ -379,10 +399,22 @@ span
         margin-left: 30px;
         margin-right: 30px;
     }
+    .text2
+    {
+        width: 65%;
+    }
+    .text3
+    {
+        width: 47%;
+    }
 }
 /* 768px */
 @media screen and (max-width: 856px)
 {
+    .buttons
+    {
+        width: 100%;
+    }
     section.top
     {
         /* height: 650px; */
@@ -435,11 +467,12 @@ span
     {
         order: 3;
         width: 457px;
+        margin-top: 76px;
     }
     .content h1
     {
         font-size: 48px;
-        width: 76%;
+        width: 87%;
     }
     .content p
     {
@@ -514,11 +547,14 @@ span
     }
     .first
     {
-        margin-top: 380px;
+        margin-top: 430px;
     }
-    #download
+    .numbers2
     {
-        padding: 5px 40px;
+        margin-top: 10px;
+    }
+    .container-img img:nth-child(1), .container-img img:nth-child(2), .container-img img:nth-child(3) {
+        margin-right: 0;
     }
 }
 @media only screen and (max-width: 768px) and (orientation: landscape) 
@@ -528,7 +564,7 @@ span
         width: 72%;
     }
 }
-@media screen and (max-width: 375px)
+@media screen and (max-width: 436px)
 {
     .img1-container
     {
@@ -567,11 +603,12 @@ span
     }
     .first
     {
-        margin-top: 399px;
+        margin-top: 500px;
     }
     .container-img
     {
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
+        padding: 0 24px;
     }
     .container-img img
     {

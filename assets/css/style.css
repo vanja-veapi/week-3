@@ -323,8 +323,8 @@ span
 {
     .content h1
     {
-        font-size: 55px;
-        width: 100%;
+        font-size: 64px;
+        width: 95%;
     }
     .text
     {
@@ -360,6 +360,14 @@ span
     {
         max-width: 25%;
         max-height: 25%;
+    }
+}
+@media screen and (max-width: 1264px)
+{
+    .content h1
+    {
+        font-size: 55px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 1062px)
@@ -479,7 +487,8 @@ span
     .content h1
     {
         font-size: 48px;
-        width: 87%;
+        /* width: 87%; */
+        width: 76%;
     }
     .content p
     {
@@ -516,6 +525,7 @@ span
     h2
     {
         font-size: 40px;
+        max-width: 424px;
     }
     .footer h2
     {
@@ -546,7 +556,10 @@ span
     }
     .text2
     {
-        width: 58%;
+        /* width: 58%; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .text3
     {
@@ -610,7 +623,8 @@ span
     }
     .first
     {
-        margin-top: 500px;
+        /* margin-top: 500px; */
+        margin-top: 550px;
     }
     .container-img
     {
@@ -633,7 +647,8 @@ span
     }
     h2
     {
-        font-size: 36px;
+        /* font-size: 36px; */
+        font-size: 32px;
     }
     .text3
     {
